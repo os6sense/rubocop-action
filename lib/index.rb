@@ -22,6 +22,11 @@ require 'time'
 }
 
 def create_check
+
+  puts "***************************"
+  puts @GITHUB_TOKEN
+  puts @GITHUB_SHA
+  puts "***************************"
   body = {
     "name" => @check_name,
     "head_sha" => @GITHUB_SHA,
